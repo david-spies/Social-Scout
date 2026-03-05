@@ -1,0 +1,33 @@
+# ── Core API framework ─────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0       # ASGI server; [standard] includes uvloop + httptools
+
+# ── Async HTTP client ──────────────────────────────────────────────────────────
+httpx>=0.27.0                   # Async HTTP — powers asyncio.gather scan engine
+
+# ── Data validation (bundled with FastAPI, pinned for stability) ───────────────
+pydantic>=2.7.0
+
+# ── Production server ──────────────────────────────────────────────────────────
+gunicorn>=22.0.0                # Process manager; pairs with uvicorn workers
+
+# ── Rate limiting (required before commercial deployment) ─────────────────────
+slowapi>=0.1.9                  # Per-IP rate limiting middleware for FastAPI
+
+# ── Environment variable management ───────────────────────────────────────────
+python-dotenv>=1.0.0            # Loads .env into os.environ
+
+# ── Security ───────────────────────────────────────────────────────────────────
+python-multipart>=0.0.9         # Required by FastAPI for form/header parsing
+
+# ── Optional: caching layer (uncomment when Redis/Upstash is configured) ───────
+# redis>=5.0.0
+# hiredis>=2.3.0                # C-extension parser — faster Redis responses
+
+# ── Optional: structured logging (recommended for production) ─────────────────
+# loguru>=0.7.0
+
+# ── Dev / testing only ─────────────────────────────────────────────────────────
+# pytest>=8.0.0
+# pytest-asyncio>=0.23.0
+# httpx[cli]>=0.27.0            # httpx CLI for manual endpoint testing
