@@ -1,3 +1,5 @@
+<img width="1280" height="637" alt="Social_Scout" src="https://github.com/user-attachments/assets/c94ac922-d8ce-46a1-a7db-1aad80cf77ce" />
+
 # Social Scout v3.0
 
 > **Social Network Username Reconnaissance Tool**
